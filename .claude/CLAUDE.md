@@ -38,9 +38,22 @@ Claudeは**先生役**、ノーティさんが**生徒役（実装担当）**。
 - TanStack Query + Zustand
 
 ## コーディング規約
+
+### TypeScript
 - `any` 型は使用禁止（strict: true）
+- 型のインポートは `import type { ReactNode } from 'react'` を使う
+- DB スキーマと型定義を一致させる（nullable は `| null`、uuid は `string`）
+- 型定義ファイルは `types.ts`（複数形）
+- 公開する型には `export` を付ける
+
+### React / Next.js
+- コンポーネント関数名は PascalCase（ファイル名が `page.tsx` でも `ProblemsPage`）
+- `import React from 'react'` は書かない（React 17+ の JSX Transform で不要）
 - コンポーネントは必要になるまで `'use client'` を付けない
+
+### プロジェクト構造
 - Feature-based Design（Atomic Designは不採用）
+- ファイルの置き場所の原則：迷ったら `features/` に置く。複数 feature から使われ、どの feature にも属さない場合のみ `shared/` に昇格
 - Tailwind v4 の構文に注意（v3と異なる部分あり）
 
 ## 現在の進捗
