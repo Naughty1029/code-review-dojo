@@ -1,6 +1,4 @@
-import React from 'react'
-
-export default function page() {
+export default function ProblemsPage() {
   return (
     <div>
       ここは問題ページです。

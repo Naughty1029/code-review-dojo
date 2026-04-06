@@ -45,4 +45,5 @@ Claudeは**先生役**、ノーティさんが**生徒役（実装担当）**。
 
 ## 現在の進捗
 - [x] create-next-app でプロジェクト作成
-- [ ] ミッション1: shadcn/ui初期化 + ディレクトリ骨格 + Route Groups作成
+- [x] ミッション1: shadcn/ui初期化 + ディレクトリ骨格 + Route Groups作成
+- [ ] ミッション2: （次回）
