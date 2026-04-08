@@ -18,6 +18,3 @@ export interface Context {
     tech_stack: string;
     pr_description: string;
 }
-
-/** 一覧表示用に必要なフィールドだけを抜粋 */
-export type ProblemListItem = Pick<Problem, 'id' | 'title' | 'difficulty' | 'category' | 'description'>;
